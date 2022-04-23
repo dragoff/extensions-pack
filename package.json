@@ -1,0 +1,14 @@
+{
+  "name": "com.dragoff.extensionspack",
+  "version": "1.0.0",
+  "displayName": "Extensions Pack Unity",
+  "author": "@dragoff (Evgeniy A)",
+  "unity": "2020.1",
+  "description": "Pack of usefull unity extensions",
+  "files": [	
+	"Scripts",
+	"Scripts.meta",
+	"package.json.meta"
+  ]
+}
+	
