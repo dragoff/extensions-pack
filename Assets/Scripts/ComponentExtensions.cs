@@ -108,11 +108,6 @@ namespace ExtensionsPack
 				t.gameObject.SetActive(active);
 		}
 
-		public static T Value<T>(this T component) where T : Object
-		{
-			return component ? component : null;
-		}
-
 		public static T GetOrAddComponent<T>(this Component cmp) where T : Component
 		{
 			return GetOrAddComponent<T>(cmp.gameObject);
@@ -120,7 +115,7 @@ namespace ExtensionsPack
 
 		public static T GetOrAddComponent<T>(this GameObject go) where T : Component
 		{
-			return go.GetComponent<T>().Value() ?? go.AddComponent<T>();
+			return go.TryGetComponent(out T component) ? component : go.gameObject.AddComponent<T>();
 		}
 	}
 }
