@@ -1,9 +1,9 @@
 {
   "name": "com.dragoff.extensionspack",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "displayName": "Extensions Pack Unity",
   "author": "@dragoff (Evgeniy A)",
-  "unity": "2020.1",
+  "unity": "2021.2",
   "description": "Pack of usefull unity extensions",
   "files": [	
 	"Scripts",
